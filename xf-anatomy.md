@@ -110,4 +110,5 @@ namespace FooApp.Droid
 * **`LoadFromXaml()`** => initializes all the objects defined in the XAML file
 
 ## Relationship between classes, properties, and XML
-A Xamarin.Forms class (such as ContentPage or Label) appears in the XAML file as an XML element. Properties of that class—including Title on ContentPage and seven properties of Label—usually appear as XML attributes.
+* a Xamarin.Forms class (such as ContentPage or Label) appears in the XAML file as an XML element
+* properties of class appear as XML attributes
