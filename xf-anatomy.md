@@ -112,3 +112,4 @@ namespace FooApp.Droid
 ## Relationship between classes, properties, and XML
 * a Xamarin.Forms class (such as ContentPage or Label) appears in the XAML file as an XML element
 * properties of class appear as XML attributes
+* for properties of more complex types, converters are used for parsing the XAML. These are classes in Xamarin.Forms that derive from `TypeConverter`
