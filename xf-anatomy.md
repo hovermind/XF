@@ -1,8 +1,8 @@
 # TOC
-* [xml namespace in `MainPage.xaml`](#)
-* [code behind (`MainPage.xaml.cs`)](#)
-* [ios specific code](#)
-* [android specific code](#)
+* [xml namespace in `MainPage.xaml`](/xf-anatomy.md#xml-namespace-in-mainpagexaml)
+* [code behind (`MainPage.xaml.cs`)](/xf-anatomy.md#code-behind)
+* [ios specific code](/xf-anatomy.md#ios-specific-code)
+* [android specific code](/xf-anatomy.md#android-specific-code)
 
 ## xml namespace in `MainPage.xaml`
 `MainPage.xaml`
