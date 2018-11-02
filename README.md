@@ -3,4 +3,4 @@
   * [xmlns in `MainPage.xaml`](https://github.com/hovermind/XF/blob/master/xmlns.md)
   * [code behind (`MainPage.xaml.cs`)](https://github.com/hovermind/XF/blob/master/code-behind.md)
   * [ios specific code](https://github.com/hovermind/XF/blob/master/ios-specific-code.md)
-  * [android specific code](#)
+  * [android specific code](https://github.com/hovermind/XF/blob/master/android-specific-code.md)
