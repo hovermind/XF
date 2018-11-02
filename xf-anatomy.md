@@ -3,6 +3,7 @@
 * [code behind (`MainPage.xaml.cs`)](/xf-anatomy.md#code-behind)
 * [ios specific code](/xf-anatomy.md#ios-specific-code)
 * [android specific code](/xf-anatomy.md#android-specific-code)
+* [Relationship between classes, properties, and XML](/xf-anatomy.md#relationship-between-classes-properties-and-xml)
 
 ## xml namespace in `MainPage.xaml`
 `MainPage.xaml`
