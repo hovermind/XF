@@ -108,4 +108,5 @@ namespace FooApp.Droid
 * **MainPage class constructor** => calls InitializeComponent(), which then calls the `LoadFromXaml()` method that extracts the XAML file (or its compiled binary) from the .NET Standard library
 * **`LoadFromXaml()`** => initializes all the objects defined in the XAML file
 
-
+## Relationship between classes, properties, and XML
+A Xamarin.Forms class (such as ContentPage or Label) appears in the XAML file as an XML element. Properties of that class—including Title on ContentPage and seven properties of Label—usually appear as XML attributes.
