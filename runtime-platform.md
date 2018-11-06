@@ -38,3 +38,22 @@ The Platform property of On is of type IList<string>, so you can include multipl
   ...
 </ContentPage>
 ```
+
+If the Value setting cannot be represented by a single string, you can define property elements for it:
+```xaml
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="...">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">
+                <On.Value>
+                    0, 20, 0, 0
+                </On.Value>
+            </On>
+        </OnPlatform>
+    </ContentPage.Padding>
+  ...
+</ContentPage>
+```
