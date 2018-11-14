@@ -6,14 +6,14 @@
 * Markup extension are important for data-binding
 * Example: `{Binding ...}`, `{StaticResource ...}`
 ```xaml
-    <StackLayout>
-    
-        <Entry Text="{Binding FooInput}" />
-        
-        <Button Text="Add"
-                Command = "{Binding AddCommand}" />
-                
-    </StackLayout>
+<StackLayout>
+
+    <Entry Text="{Binding FooInput}" />
+
+    <Button Text="Add"
+            Command = "{Binding AddCommand}" />
+
+</StackLayout>
 ```
 `BingdingContext` is set in code behind:
 ```c#
