@@ -1,5 +1,5 @@
 # Syntax
-`Property={ markup_extension_here }`
+`Property="{ markup_extension_here }"`
 
 # Common markup entensions
 | markup extension | purpose |
