@@ -8,7 +8,7 @@
 | `{StaticResource ...}` | XAML resources with `x:key` |
 | `{x:Static ...}` | Accesses one of the following: <ul> <li>a public static field</li> <li>a public static property</li> <li>a public constant field</li> <li>an enumeration member</li> </ul> |
 | `{x:Reference ...}` <br /> `{x:Reference Name=...}` | Refers control (view i.e. Label) with `x:Name` |
-| `{Binding Value, StringFormat='... {x:x} ...'}` <br /> `StringFormat=''` => `''` is important |
+| `{Binding Value, StringFormat='... {x:x} ...'}` <br /> (`StringFormat=''` => `''` is important) | `String.Format` will be called with format `{x:x}` |
 | `{x:Type someClass}` | target type |
 | `{x:Array ...}` | arrays in XAML |
 | `{x:Null}` | to set `null` |
