@@ -2,6 +2,7 @@
 
 ## Markup extension
 * XAML markup extensions are not extensions of XML (XAML is entirely legal XML). They’re called “extensions” because they are backed by code in classes that implement IMarkupExtension
+* On the programmatic level, a XAML markup extension is a class that implements the `IMarkupExtension` or `IMarkupExtension<T>` interface (See: [MarkupExtensions directory of the Xamarin.Forms GitHub repository](https://github.com/xamarin/Xamarin.Forms/tree/master/Xamarin.Forms.Xaml/MarkupExtensions))
 * You can write your own custom markup extensions
 * Markup extension are important for data-binding
 * Example: `{Binding ...}`, `{StaticResource ...}`
