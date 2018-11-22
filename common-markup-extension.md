@@ -4,7 +4,7 @@
 | `{Binding ...}` | data binding (with [`BindingContext`] or [`Source` & `Path`]) |
 | `{StaticResource ...}` | XAML resources with `x:key` |
 | `{x:Static ...}` | Accesses one of the following: <ul> <li>a public static field</li> <li>a public static property</li> <li>a public constant field</li> <li>an enumeration member</li> </ul> |
-| `{x:Reference ...}` | Refers control (view i.e. Label) with `x:Name` |
+| `{x:Reference ...}` <br /> `{x:Reference Name=...}` | Refers control (view i.e. Label) with `x:Name` |
 | `{x:Null}` | to set `null` |
 | `{x:Type someClass}` | target type |
 | `{x:Array ...}` | arrays in XAML |
