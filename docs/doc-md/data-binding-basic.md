@@ -1,6 +1,6 @@
 # TOC
 * [BindingContext](#binding-context)
-* [Bind to other view property in same page](#)
+* [Bind to other view property in same page](#bind-to-other-view-property-in-same-page)
 
 ## Binding Context
 #### Set `BindingContext` in code behind
