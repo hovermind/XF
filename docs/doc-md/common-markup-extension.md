@@ -12,6 +12,7 @@
 | `{x:Reference ...}` <br /> `{x:Reference Name=...}` | Refers control (view i.e. Label) with `x:Name` |
 | `{Binding Value, StringFormat='... {x:x} ...'}` <br /> (`StringFormat=''` => `''` is important) | String value converter <br /> `String.Format` will be called with format `{x:x}` |
 | `{x:Type someClass}` | target type |
+| `x:DataType="..."` <br /> `x:DataType="local:FooViewModel"` | Compiled binding |
 | `{x:Array ...}` | arrays in XAML |
 | `{x:Null}` | to set `null` |   
 
