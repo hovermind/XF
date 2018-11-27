@@ -10,11 +10,15 @@
 | `"{Binding ...}"` | <ul><li>`Source`</li><li>`Path`</li><li>`Mode` (See: [BindingMode](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.bindingmode?view=xamarin-forms))</li></ul> | Bind `SourceObject.Prop` to the view | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
 | `"{x:Reference ...}"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
+**Note:** Always set `Mode` property explicitly to avoid unexpected behaviors from default value of `Mode` 
+
+#### BindingContext and Syntax
 | `BindingContext` | Syntax |
 |------------------|--------|
 | **not set** | `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"` |
 | **set** | `"{Binding Path=fooProp}"` |
 
+#### Syntactic sugar
 | Syntactic sugar | Full syntax |
 |-----------------|-------------|
 | `"{Binding fooProp}"` | `"{Binding Path=fooProp}"` |
