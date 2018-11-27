@@ -7,7 +7,7 @@
 ## Markup extensions for data binding
 | Markup extension | Property used in markup | purpose | Extension class |
 |------------------|-------------------------|---------|-----------------|
-| `"{Binding ...}"` | <ul><li>`Source`</li><li>`Path`</li></ul> | Bind source object.prop to the view | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
+| `"{Binding ...}"` | <ul><li>`Source`</li><li>`Path`</li></ul> | Bind `SourceObject.Prop` to the view | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
 | `"{x:Reference Name=... }"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
 ## Binding Context
