@@ -13,10 +13,10 @@
 **Notes:**
 * `BindingContext` 
   * set: `"{Binding Path=fooViewModelProp}"`
-  * not set:`"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"`
-* Syntactic sugar: 
-  * `"{Binding fooProp}"` (<= `"{Binding Path=fooViewModelProp}"`)
-  * `"{Binding fooProp, Source={StaticResource fooViewModel}}"` (<= `"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"`) 
+  * **not set:**`"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"`
+* **Syntactic sugar:** 
+  * `"{Binding fooProp}"` (<= `"{Binding Path=fooProp}"`)
+  * `"{Binding fooProp, Source={StaticResource fooViewModel}}"` (<= `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"`) 
   * `"{Binding Value, Source={x:Reference viewName}}"` (<= `"{Binding Source={x:Reference viewName}, Path=Value}"`)
 * Alternative element syntax:
 ```
