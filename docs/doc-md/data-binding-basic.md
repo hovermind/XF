@@ -15,14 +15,15 @@
   * set: `"{Binding Path=fooViewModelProp}"`
   * not set:`"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"`
 * Syntactic sugar: 
-  * `"{Binding Path=fooViewModelProp}"` => `"{Binding fooViewModelProp}"`
-  * `"{Binding Source={x:Reference fooViewName}, Path=Value}"` => `"{Binding Value, Source={x:Reference fooViewName}}"`
+  * `"{Binding fooProp}"` (<= `"{Binding Path=fooViewModelProp}"`)
+  * `"{Binding fooProp, Source={StaticResource fooViewModel}}"` (<= `"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"`) 
+  * `"{Binding Value, Source={x:Reference viewName}}"` (<= `"{Binding Source={x:Reference viewName}, Path=Value}"`)
 * Alternative element syntax:
 ```
 <Label.Scale>
 	<Binding Path="Value">
 		<Binding.Source>
-			<x:Reference Name="fooViewName" />
+			<x:Reference Name="viewName" />
 		</Binding.Source>
 	</Binding>
 </Label.Scale>
