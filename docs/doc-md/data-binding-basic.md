@@ -1,5 +1,5 @@
 # TOC
-* [BindingContext](/data-binding-basic.md#binding-context)
+* [BindingContext](#binding-context)
 * [Bind to other view property in same page](#)
 
 ## Binding Context
