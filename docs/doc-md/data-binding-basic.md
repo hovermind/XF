@@ -8,7 +8,7 @@
 | Markup extension | Property used in markup | Extension class |
 |------------------|-------------------------|-----------------|
 |<ul><li>`"{Binding ...}"` : Bind `SourceObject.Prop` to the view</li><li>`"{Binding}"` : `BindingContext` itself binds to the view</li></ul> | <ul><li>`Source`</li><li>`Path`</li><li>`Mode`</li><li>`StringFormat`</li></ul> | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
-| <ul><li>`"{x:Reference ...}"` : Bind to other view property in same view</li></ul> | <ul><li>`Name`</li></ul> | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
+| <ul><li>`{x:Reference ...}` : Bind to other view property in same view</li></ul> | <ul><li>`Name`</li></ul> | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
 **Notes:**
 * Always set `Mode` (See: [BindingMode](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.bindingmode?view=xamarin-forms)) property explicitly to avoid unexpected behaviors from default value of `Mode`
