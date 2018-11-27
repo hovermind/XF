@@ -13,7 +13,7 @@
 | `BindingContext` | syntax |
 |------------------|--------|
 | **not set** | `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"` |
-| **set** | `"{Binding Path=fooViewModelProp}"` |
+| **set** | `"{Binding Path=fooProp}"` |
 
 | Syntactic sugar | Full syntax |
 |-----------------|-------------|
