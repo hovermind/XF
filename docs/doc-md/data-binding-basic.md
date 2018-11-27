@@ -1,6 +1,8 @@
 # TOC
+* [Markup extensions for data binding](#markup-extensions-for-data-binding)
 * [BindingContext](#binding-context)
 * [Bind to other view property in same page](#bind-to-other-view-property-in-same-page)
+
 
 ## Markup extensions for data binding
 | Markup extension | Property used in markup | purpose | Extension class |
