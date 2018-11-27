@@ -7,7 +7,7 @@
 ## Markup extensions for data binding
 | Markup extension | Property used in markup | Extension class |
 |------------------|-------------------------|-----------------|
-|<ul><li>`"{Binding ...}"` : Bind `SourceObject.Prop` to the view</li><li>`"{Binding}"` : `BindingContext` itself binds to the view</li></ul> | <ul><li>`Source`</li><li>`Path`</li><li>`Mode`</li><li>`StringFormat`</li><li>`Converter`</li></ul> | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
+|<ul><li>`"{Binding ...}"` : Bind `SourceObject.Prop` to the view</li><li>`"{Binding}"` : `BindingContext` itself binds to the view</li></ul> | <ul><li>`Source`</li><li>`Path`</li><li>`Mode`</li><li>`StringFormat`</li><li>`Converter`</li><li>`FallbackValue`</li><li>`TargetNullValue`</li></ul> | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
 | <ul><li>`{x:Reference ...}` : Bind to other view property in same view</li></ul> | <ul><li>`Name`</li></ul> | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
 **Notes:**
@@ -15,6 +15,11 @@
 * `Path` property can go down to property hierarchy (i.e. `Foo.Bar.Baz`) & can access element of indexer (i.e. `Foo.Bar.Baz[n]` where Baz is an indexer)
 *  `StringFormat='... {0:xx}...'` single quote: '' is mandatory, use `&quot;` for double quote inside
 * If `StringFormat` & `Converter` are both set, the value converter is invoked before the result is formatted as a string
+* if `FallbackValue` & `TargetNullValue` are set directly, then single quote is needed (recommended: define as static resource => `Text="{Binding FooProp, FallbackValue={StaticResource fooDefault}}"`)
+* It's not possible to set the `FallbackValue` &  `TargetNullValue` properties with a binding expression
+* A defined value converter is not executed in a binding expression when the `FallbackValue` property is set
+* String formatting is not applied in a binding expression when the `TargetNullValue` property is set
+
 
 #### BindingContext and Syntax
 | `BindingContext` | Syntax |
