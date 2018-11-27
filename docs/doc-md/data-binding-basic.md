@@ -11,9 +11,12 @@
 | `"{x:Reference ...}"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
 **Notes:**
-* When `BindingContext` is set: `"{Binding Path=fooViewModelProp}"` or `"{Binding Path=Value}"`
-* When `BindingContext` is not set:`"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"` or `"{Binding Source={x:Reference fooViewName}, Path=Value}"`
-* Syntactic sugar: `"{Binding fooViewModelProp}"`
+* `BindingContext` 
+  * set: `"{Binding Path=fooViewModelProp}"`
+  * not set:`"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"`
+* Syntactic sugar: 
+  * `"{Binding Path=fooViewModelProp}"` => `"{Binding fooViewModelProp}"`
+  * `"{Binding Source={x:Reference fooViewName}, Path=Value}"` => `"{Binding Value, Source={x:Reference fooViewName}}"`
 * Alternative element syntax:
 ```
 <Label.Scale>
