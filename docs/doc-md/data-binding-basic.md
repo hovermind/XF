@@ -12,6 +12,7 @@
 
 **Notes:**
 * Always set `Mode` (See: [BindingMode](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.bindingmode?view=xamarin-forms)) property explicitly to avoid unexpected behaviors from default value of `Mode`
+* `Path` property can go down to property hierarchy (i.e. `Foo.Bar.Baz`) & can access element of indexer (i.e. `Foo.Bar.Baz[n]` where Baz is an indexer)
 *  `StringFormat='... {0:xx}...'` single quote: '' is mandatory, use `&quot;` for double quote inside
 
 #### BindingContext and Syntax
