@@ -10,15 +10,18 @@
 | `"{Binding ...}"` | <ul><li>`Source`</li><li>`Path`</li><li>`Mode` (See: [BindingMode](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.bindingmode?view=xamarin-forms))</li></ul> | Bind `SourceObject.Prop` to the view | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
 | `"{x:Reference ...}"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
 
-**Notes:**
-* `BindingContext` 
-  * set: `"{Binding Path=fooViewModelProp}"`
-  * **not set:**`"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"`
-* **Syntactic sugar:** 
-  * `"{Binding fooProp}"` (<= `"{Binding Path=fooProp}"`)
-  * `"{Binding fooProp, Source={StaticResource fooViewModel}}"` (<= `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"`) 
-  * `"{Binding Value, Source={x:Reference viewName}}"` (<= `"{Binding Source={x:Reference viewName}, Path=Value}"`)
-* Alternative element syntax:
+| `BindingContext` | syntax |
+|------------------|--------|
+| **not set** | `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"` |
+| **set** | `"{Binding Path=fooViewModelProp}"` |
+
+| Syntactic sugar | Full syntax |
+|-----------------|-------------|
+| `"{Binding fooProp}"` | `"{Binding Path=fooProp}"` |
+| `"{Binding fooProp, Source={StaticResource fooViewModel}}"` | `"{Binding Source={StaticResource fooViewModel}, Path=fooProp}"` |
+| `"{Binding Value, Source={x:Reference viewName}}"` | `"{Binding Source={x:Reference viewName}, Path=Value}"` |
+
+#### Alternative element syntax:
 ```
 <Label.Scale>
 	<Binding Path="Value">
