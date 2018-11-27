@@ -8,7 +8,22 @@
 | Markup extension | Property used in markup | purpose | Extension class |
 |------------------|-------------------------|---------|-----------------|
 | `"{Binding ...}"` | <ul><li>`Source`</li><li>`Path`</li></ul> | Bind `SourceObject.Prop` to the view | [BindingExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.bindingextension) |
-| `"{x:Reference Name=... }"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
+| `"{x:Reference ...}"` | <ul><li>`Name`</li></ul> | Bind to other view property in same view | [ReferenceExtension](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.xaml.referenceextension) |
+
+**Notes:**
+* When `BindingContext` is set: `"{Binding Path=fooViewModelProp}"` or `"{Binding Path=Value}"`
+* When `BindingContext` is not set:`"{Binding Source={StaticResource fooViewModel}, Path=fooViewModelProp}"` or `"{Binding Source={x:Reference fooViewName}, Path=Value}"`
+* Syntactic sugar: `"{Binding fooViewModelProp}"`
+* Alternative element syntax:
+```
+<Label.Scale>
+	<Binding Path="Value">
+		<Binding.Source>
+			<x:Reference Name="fooViewName" />
+		</Binding.Source>
+	</Binding>
+</Label.Scale>
+```
 
 ## Binding Context
 #### Set `BindingContext` in code behind
