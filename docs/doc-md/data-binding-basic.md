@@ -30,6 +30,8 @@
 ```
 
 ## Binding Context
+The setting of the `BindingContext` property is inherited through the visual tree - means if you set `BindingContext` property of parent view, all child views will inherit that `BindingContext`.
+
 #### Set `BindingContext` in code behind
 ```
 public partial class FooPage : ContentPage
@@ -45,7 +47,7 @@ public partial class FooPage : ContentPage
 * setting `BindingContext` in code behind is preferred because ViewModel can be instantiated with constructor that accepts parameters
 * while setting `BindingContext` in xaml, the ViewModel must have parameterless constructor and can't instantiate ViewModel with parameter
 
-#### Use properties of `FooViewModel` in markup extension
+#### Use properties of ViewModel in markup extension
 ```
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
